@@ -55,7 +55,7 @@ function App() {
         <Route path='/search' element={<Search />} />
         <Route path='/favorites' element={<Favorites />} />
         <Route path={`/details/:id`} element={<Details />} />
-        <Route path='/*' element={<Navigate to='/'/>}/>
+        <Route path='/*' element={<Navigate to='/'/>}/>git 
      </Routes>
     </>
   )
