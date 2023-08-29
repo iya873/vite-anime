@@ -8,7 +8,7 @@ const DetailCard = ({ details }) => {
       <>
           <h2>{details.title}</h2>
           <img src={details.image} alt={details.title} /> <br />
-          {details.genres + ' '}
+          <p><b>Genres:</b> {details.genres + ' '}</p>
           <h4>No. of Episodes: {details.episodes}</h4>
           <h5>Breakdown: </h5>
           <p>{details.synopsis}</p>

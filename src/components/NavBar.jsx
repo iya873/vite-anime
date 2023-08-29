@@ -1,19 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from 'react-bootstrap/Navbar'
+import  Container  from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
 
 const NavBar = () => {
   return (
-    <nav>
-          <li>
-              <Link to='/'>Home</Link>
-        </li>
-          <li>
-              <Link to='/search'>Search</Link>
-        </li>
-          <li>
-              <Link to='/favorites'>Favorites</Link>
-        </li>
-    </nav>
+    <Navbar className='justify-content-md-center'>
+      <Container>
+        <Nav>
+          <Link to='/'>Home</Link>
+        </Nav>
+        <Nav>
+          <Link to='/search'>Search</Link>
+        </Nav>
+        <Nav>
+          <Link to='/favorites'>Favorites</Link>
+        </Nav>
+      </Container>
+    </Navbar>
   )
 }
 
